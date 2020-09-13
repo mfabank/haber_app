@@ -10,7 +10,7 @@ class _FavoriPageState extends State<PhotoUpload> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Fotoğraf Ekleme"),
+        child: Text("Fotoğraf Ekleme!!"),
       ),
     );
   }
