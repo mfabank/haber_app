@@ -64,10 +64,24 @@ class _HomePageState extends State<HomePage> {
                 margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 3.0),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: _current == index ? Colors.deepPurpleAccent : Colors.blueGrey,
+                  color: _current == index
+                      ? Colors.deepPurpleAccent
+                      : Colors.blueGrey,
                 ),
               );
             }),
+          ),
+          Divider(color: Colors.white),
+          Container(
+            padding: const EdgeInsets.all(5.0),
+            height: 200.0,
+            decoration: BoxDecoration(
+              image: const DecorationImage(
+                image: NetworkImage(
+                    'https://firebasestorage.googleapis.com/v0/b/haber-app-deneme.appspot.com/o/2.jpg?alt=media&token=6ac4a43c-63f4-49b4-9e62-2b907d64be13'),
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
         ],
       ),
